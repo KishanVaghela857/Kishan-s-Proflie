@@ -68,7 +68,7 @@ function HeroSection() {
 
           </div>
           <div className="btn">
-            <button><a href="https://github.com/KishanVaghela857" target='_blank'>...Github...</a>
+            <button>...Github...
             </button>
           </div>
         </div>
