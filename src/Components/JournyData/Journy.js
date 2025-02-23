@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import "./journey.css"; 
-import Footer from "../MainHome/Footer/Footer";
 
 const journeyData = [
   {
