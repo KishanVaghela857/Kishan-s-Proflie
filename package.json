@@ -2,7 +2,7 @@
   "name": "-",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vaghelakishan857.github.io/kishan-s-profile",
+  "homepage": "/", 
   "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -25,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
