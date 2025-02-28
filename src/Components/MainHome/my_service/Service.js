@@ -1,5 +1,6 @@
 import React from "react";
 import "./service.css";
+import Card from "../../Card/Card";
 
 function Service() {
     const services = [
@@ -7,10 +8,10 @@ function Service() {
             title: "Frontend Development",
             description: "Building responsive and user-friendly interfaces using React, HTML, CSS, and JavaScript.",
         },
-        {
-            title: "UI/UX Design",
-            description: "Creating intuitive and aesthetically pleasing user experiences with modern design principles.",
-        },
+        // {
+        //     title: "UI/UX Design",
+        //     description: "Creating intuitive and aesthetically pleasing user experiences with modern design principles.",
+        // },
         {
             title: "Web Optimization",
             description: "Enhancing website speed, accessibility for a smooth and optimized user experience.",
@@ -29,7 +30,14 @@ function Service() {
                 </div>
 
                 <div className="cardSec">
+
                     {services.map((service, index) => (
+    <Card key={index} title={service.title} description={service.description} />
+))}
+
+
+
+                    {/* {services.map((service, index) => (
                         <div className="card" key={index}>
                             <h1 style={{ fontSize: "22px", color: "white" }}>{service.title}</h1>
                             <p className="heading" style={{ fontSize: "13px", color: "green" }}>
@@ -37,9 +45,9 @@ function Service() {
                             </p>
                             <p>
                                 {/* <button style={{ fontSize: "10px" }}>Explore</button> */}
-                            </p>
-                        </div>
-                    ))}
+                            {/* </p>
+                        </div> */}
+                    {/* ))} */} 
                 </div>
             </div>
         </section>

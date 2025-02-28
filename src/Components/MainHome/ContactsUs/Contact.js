@@ -8,7 +8,7 @@ function Contact() {
     event.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:2525/Contact', {
+      const res = await fetch('https://portfoliobackend-lt6d.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <Navbar title="DevKishan" />
+      <Navbar title="Kishan's Profile" />
       {isLoading ? (
         <Loader />
       ) : (
